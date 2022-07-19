@@ -1,0 +1,23 @@
+const uint8_t seta_baixo_Width    = 5;
+const uint8_t seta_baixo_Height   = 3;
+const uint8_t PROGMEM seta_baixo_Bitmap[] = { 
+  0x01, 0x03, 0x07, 0x03, 0x01
+};
+
+const uint8_t seta_cima_Width    = 5;
+const uint8_t seta_cima_Height   = 3;
+const uint8_t PROGMEM seta_cima_Bitmap[] = { 
+  0x04, 0x06, 0x07, 0x06, 0x04
+};
+
+const uint8_t seta_direita_Width    = 3;
+const uint8_t seta_direita_Height   = 5;
+const uint8_t PROGMEM seta_direita_Bitmap[] = { 
+  0x1f, 0x0e, 0x04
+};
+
+const uint8_t seta_esquerda_Width    = 3;
+const uint8_t seta_esquerda_Height   = 5;
+const uint8_t PROGMEM seta_esquerda_Bitmap[] = { 
+  0x04, 0x0e, 0x1f
+};
