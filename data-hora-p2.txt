@@ -1,0 +1,39 @@
+
+void data_hora(int dia, int semana, int mes, int hora, int min){
+    Nokia5110_Clear();
+    Nokia5110_ClearBuffer();
+    if(dia<10){
+        Nokia5110_PrintBMP2(40, 0, zero_small, 3, 5);  // zero na frente
+        Nokia5110_PrintBMP2(44, 0, num_small[dia], 3, 5); // o numero do dia
+    }else{
+        Nokia5110_PrintBMP2(40, 0, num_small[dia/10], 3, 5); //dezena do dia
+        Nokia5110_PrintBMP2(44, 0, num_small[dia%10], 3, 5); //unidade do dia
+    }
+    Nokia5110_PrintBMP2(48, 0, bar, 5, 5); // a barra do dia/mes
+    if(mes<10){
+        Nokia5110_PrintBMP2(54, 0, zero_small, 3, 5); // zero na frente
+        Nokia5110_PrintBMP2(58, 0, num_small[mes], 3, 5); //unidade do mes
+    }else{
+        Nokia5110_PrintBMP2(54, 0, num_small[mes/10], 3, 5); //dezena do mes
+        Nokia5110_PrintBMP2(58, 0, num_small[mes%10], 3, 5); //unidade do mes
+    }
+    if(hora<10){
+        Nokia5110_PrintBMP2(5, 12, zero_big, 15, 30); //zero na frente da hora
+        Nokia5110_PrintBMP2(22, 12, num_big[hora], 15, 30); // unidade da hora
+    }else{
+        Nokia5110_PrintBMP2(5, 12, num_big[hora/10], 15, 30); //dezena da hora
+        Nokia5110_PrintBMP2(22, 12, num_big[hora%10], 15, 30); //unidade da hora
+    }
+    Nokia5110_PrintBMP2(38, 12, point, 6, 30); // os pontos do hora:min
+    if(min<10){
+        Nokia5110_PrintBMP2(45, 12, zero_big, 15, 30); // zero na frente dos min
+        Nokia5110_PrintBMP2(63, 12, num_big[min], 15, 30); // unidade de min
+    }else{
+        Nokia5110_PrintBMP2(45, 12, num_big[min/10], 15, 30); // zero na frente dos min
+        Nokia5110_PrintBMP2(63, 12, num_big[min%10], 15, 30); // unidade de min
+    }
+    Nokia5110_PrintBMP2(24, 0, dias_semana[semana], 11, 5); //printa o dia da semana
+    Nokia5110_DisplayBuffer();
+
+}
+
