@@ -29,7 +29,7 @@
 		<link>
 			<name>driverlib.lib</name>
 			<type>1</type>
-			<locationURI>PARENT-8-PROJECT_LOC/ti/ccs1120/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib</locationURI>
+			<locationURI>PARENT-7-PROJECT_LOC/ti/ccs1200/TivaWare_C_Series-2.1.4.178/driverlib/ccs/Debug/driverlib.lib</locationURI>
 		</link>
 	</linkedResources>
 	<variableList>

@@ -106,6 +106,7 @@ void GPIOF_Handler(){
     }
 }
 
+
 void Timer0_Handler(){
     //Limpa as fontes de interrupção do temporizador
     TimerIntClear(TIMER0_BASE, TIMER_TIMA_TIMEOUT);
@@ -346,6 +347,7 @@ void display(){
         }
     }
 }
+
 
 // Função para plotar a onda escolhida pelo usuário
 void plot_Waves() {
